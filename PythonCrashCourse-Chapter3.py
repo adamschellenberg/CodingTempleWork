@@ -48,3 +48,40 @@ for index, x in enumerate(people_to_invite):
 while len(people_to_invite) > 0:
     del people_to_invite[0]
 print(people_to_invite)
+
+# SECTION Organizing a List TRY IT YOURSELF page 50
+# 3-8 Seeing the World
+places_to_visit = ["Japan", "Canada", "Xbox HQ", "New York", "Nintendo HQ"]
+print (places_to_visit)
+print (sorted(places_to_visit))
+print (places_to_visit)
+print (sorted(places_to_visit, reverse=True))
+print (places_to_visit)
+places_to_visit.reverse()
+print (places_to_visit)
+places_to_visit.reverse()
+print (places_to_visit)
+places_to_visit.sort()
+print (places_to_visit)
+places_to_visit.sort(reverse=True)
+print (places_to_visit)
+
+# 3-9 Dinner Guests
+people_to_invite_1 = ['Ash Ketchum', 'Tracey Sketchit', 'Todd Snap']
+print (len(people_to_invite_1))
+
+# 3-10 Every Function (append, insert, del, pop, remove, sort, sort reverse, sorted, reverse, len)
+languages = ["German", "Spanish"]
+languages.append("English")
+languages.insert(0, "Japanese")
+del languages[1]
+popped_language = languages.pop()
+languages.remove ("Spanish")
+sorted_languages = sorted(languages)
+languages.reverse()
+languages.sort()
+languages.sort(reverse=True)
+len(languages)
+
+# 3-11 Intentional Error
+# del languages[20]
