@@ -46,4 +46,43 @@ cubes = [cube**3 for cube in range (1, 11)]
 for cube in cubes:
     print(cube)
 
+
 # SECTION Working with Part of a List TRY IT YOURSELF page 69
+# 4-10 Slices
+print('The first three items in the list are: ' + str(odd_numbers[:3]))
+print('The middle three items in the list are: ' + str(odd_numbers[3:6]))
+print('The last three items in the list are: ' + str(odd_numbers[-3:]))
+
+# 4-11 My Pizzas, Your Pizzas
+friend_pizzas = pizzas[:]
+pizzas.append('veggie')
+friend_pizzas.append('hawaiian')
+print('My favorite pizzas are:')
+for pizza in pizzas:
+    print(pizza)
+print("My friend's favorite pizzas are:")
+for friend_pizza in friend_pizzas:
+    print(friend_pizza)
+
+# 4-12 More Loops
+foods_py_1 = ['pizza', 'falafel', 'carrot cake']
+foods_py_2 = ['pizza', 'falafel', 'carrot cake', 'ice cream']
+
+print("The first list of foods.py is:")
+for food in foods_py_1:
+    print(food)
+
+print("The second list of foods.py is:")
+for food in foods_py_2:
+    print(food)
+
+
+# SECTION Tuples TRY IT YOURSELF page 71
+# 4-13 Buffet
+buffet_foods = ('Sushi', 'Ramen' ,'Teriyaki' ,'BBQ' ,'Rice')
+for food in buffet_foods:
+    print(food)
+# buffet_foods[0] = 'Butter'
+buffet_foods = ('Sushi', 'Ramen' ,'Teriyaki' ,'Tempura' ,'Taiyaki')
+for food in buffet_foods:
+    print(food)
