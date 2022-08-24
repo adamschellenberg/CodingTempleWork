@@ -1,0 +1,48 @@
+body {
+    background-color: #FDF1D3;
+}
+
+.jumbotron {
+    background-color: #F7BF81;
+    margin-bottom: 25px;
+}
+.jumbotron > div > h1 {
+    font-size: 3.5rem;
+    color: #3A3B3C
+}
+
+.projects > ul {
+    margin-top: -20px;
+    list-style-type: none;
+}
+
+#nexopedia-li::before {
+    content: '';
+    display: inline-block;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-image: url('assets/nexomon-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+
+#megaman-li::before {
+    content: '';
+    display: inline-block;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-image: url('assets/megaman-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+a {
+    color: #212529;
+}
+
+textarea {
+    opacity: 0.65;
+}

@@ -1,0 +1,105 @@
+<!-- 
+    HTML/CSS PORTFOLIO PRE-WORK ASSIGNMENT
+    Create a website with the following:
+        - At least two links
+            - adamschellenberg.github.io
+            - Github profile
+            - Nexopedia repo
+        - At least two different images
+            - Nexomon
+            - MMBN
+        - At least one form
+            - mock "PDZ is better"
+    In your website, mention:
+        - About you
+        - Your hobbies
+        - Your background
+        - Why you want to become a web developer
+    Add your own flair!
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to world of tomorrow!</title>
+        <!-- Bootstrap CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+        <!-- custom CSS -->
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main">
+            <div class="jumbotron">
+                <div class="container-fluid py-5">
+                    <h1 class="display-3 px-4 fw-bold">Hi, I'm Adam</h1>
+                    <p class="px-5">I'm a web developer.</p>
+                </div>
+            </div>
+
+            <div class="container">
+                <!-- About me + hobbies + background section -->
+                <p>I hope you're here to talk about Pokemon, manga, or
+                    basically any trading card game, because that's what I'm about!
+                    <br />
+                    Oh, and I guess my wife and three (as of Aug 12th!), too.
+                    They're pretty cool, I guess.
+                    <br />
+                    But hey, you're here for the good stuff, right?
+                    Well, you're in luck; having grown up as the middle child
+                    of 9 kids, I've seen a pretty wide variety of opinions and
+                    hobbies, so I know the good stuff. Stuff like Ed, Edd n Eddy,
+                    Megaman Battle Network, Perfect Dark, and Azumanga Daioh.
+                </p>
+            </div>
+
+            <div class="container projects">
+                <!-- Projects I'm working on + why I want to dev section -->
+                <h3>What I'm doing</h3>
+                <p>I'm currently working on a few things. Well, okay, other than
+                    this bootcamp, I'm working on two things.
+                </p>
+                <ul>
+                    <li id="nexopedia-li">An unofficial wiki-site for Nexomon (think Bulbapedia 
+                        or Serebii, but muuuuuch smaller).
+                        <a href="https://github.com/adamschellenberg/nexopedia" target="_blank">
+                            Check out the Github repo until the site launches!
+                        </a>
+                    </li>
+                    <li id="megaman-li">And another unofficial wiki-site. This time, for the
+                        Megaman NT Warrior TCG. Never heard of it? Well, that's
+                        why I want to build this site. Basically no one has, and
+                        it's a shame. Sure, it was only on the market for one year
+                        like, 20 years ago, but still! This one is still in the
+                        planning phases, so there's no repo yet.
+                    </li>
+                </ul>
+                <p>It's fun projects like these that push me to keep learning more.
+                    After all, if I don't make a website where you can build a deck
+                    for a dead tcg, print out proxies, and play with your friends,
+                    then who will?!
+                </p>
+                <p>To see more of whatever random stuff I'm working on, feel free
+                    to poke around <a href="https://github.com/adamschellenberg" target="_blank">my Github repos</a><br />
+                    Or visit my <a href="https://adamschellenberg.github.io/" target="_blank">Github Page</a>!
+                </p>
+            </div>
+
+            <div class="container">
+                <!-- form -->
+                <form>
+                    <label for="argument"><h3>Perfect Dark: Zero is better than the original.
+                        Change my mind.</h3>
+                    </label><br />
+                    <textarea class="form-control text-bg-dark my-1"></textarea>
+                    <button type="button" class="btn btn-primary">Argue</button>
+                </form>
+            </div>
+
+            <footer class="mt-5">
+                <div class="container text-center">
+                    Copyright © 2022 Adam Schellenberg
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
