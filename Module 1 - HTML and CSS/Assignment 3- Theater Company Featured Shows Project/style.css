@@ -1,0 +1,120 @@
+* {
+    /* border: 1px solid red; */
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav {
+    width: 100%;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.background-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.jumbotron-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-size: 7em;
+}
+
+.background {
+    width: 100%;
+}
+
+.shows-container {
+    margin: auto;
+    margin-top: 100px;
+    width: 70%;
+}
+#dateHeader {
+    border: 1px solid lightgray;
+    background-color: #F7F7F7;
+    padding-left: 50px;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.show-img {
+    height: 200px;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+.shows-container li {
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+.show-title {
+    font-size: 1.5em;
+}
+
+.show-date {
+    font-weight: bolder;
+}
+
+.footer {
+    margin-bottom: 0px;
+}
+
+.bottom {
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    justify-content: space-around;
+}
+
+.map {
+    width: 250px;
+    padding: 2%;
+    padding-left: 25px;
+}
+
+.mapimg {
+    width: 250px;
+}
+
+.footinfo {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    font-size: 0.8em;
+}
+
+.footshows {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    font-size: 0.8em;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    font-size: 0.8em;
+}
+
+.foothead {
+    font-size: 3em;
+}
+
+.tiny {
+    margin: 3px;
+}
