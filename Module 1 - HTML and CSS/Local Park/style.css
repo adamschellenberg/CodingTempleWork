@@ -1,0 +1,97 @@
+* {
+    /* border: 1px solid red; */
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #e3f2fd;
+}
+
+nav {
+    background-color: #abd8f8;
+}
+
+#about, #map, #contest, #wildlife {
+    scroll-margin-top: 70px;
+}
+
+
+/* Jumbotron section */
+.background {
+    width: 100%;
+}
+
+/* About section */
+.about {
+    margin-top: 50px;
+}
+.about-img {
+    width: 100%;
+}
+
+.about-header {
+    text-align: center;
+}
+
+/*  Contest section */
+.contest {
+    margin-top: 50px;
+}
+.contest-img {
+    width: 100%;
+}
+
+.contest-header {
+    text-align: center;
+}
+
+.tiny {
+    font-size: small;
+}
+
+/* Map section */
+.map {
+    margin-top: 50px;
+}
+
+.map-img {
+    width: 100%;
+}
+
+.map-header {
+    text-align: center;
+}
+
+/* Wildlife section */
+.wildlife {
+    margin-top: 50px;
+}
+
+.wildlife-header {
+    text-align: center;
+
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.grid-image {
+    width: 100%;
+}
+
+/* Footer section */
+footer {
+    margin-bottom: 0px;
+}
+
+.bottom {
+    width: 100%;
+    text-align: center;
+}
+
+.copyright {
+    margin-bottom: 0px;
+    font-size: small;
+}
