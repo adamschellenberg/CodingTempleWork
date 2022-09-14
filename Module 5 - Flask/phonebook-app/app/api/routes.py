@@ -23,6 +23,7 @@ def create_contact(current_user_token):
 
     db.session.add(contact)
     db.session.commit()
+
     response = contact_schema.dump(contact)
     return jsonify(response)
 

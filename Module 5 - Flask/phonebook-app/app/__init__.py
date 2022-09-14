@@ -1,6 +1,4 @@
-# PURPOSE OF THIS __init__.py :
-    # 
-from flask import Flask
+from flask import Flask, render_template
 from config import Config
 from .site.routes import site
 from .authentication.routes import auth

@@ -60,7 +60,8 @@ class Contact(db.Model):
 
     def __init__ (self, name, email, phone_number, address, user_token, id=''):
         self.id = self.set_id()
-        self.name = email
+        self.name = name
+        self.email = email
         self.phone_number = phone_number
         self.address = address
         self.user_token = user_token
