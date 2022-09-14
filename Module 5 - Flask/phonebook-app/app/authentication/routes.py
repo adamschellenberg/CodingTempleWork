@@ -44,6 +44,7 @@ def signin():
                 return redirect(url_for('site.profile'))
             else:
                 flash('You have failed in your attempt to access this content.', 'auth-failed')
+                return redirect(url_for('auth.signin'))
     except:
         raise Exception('Invalid form data: Please check your form')
     return render_template('sign_in.html', form=form)

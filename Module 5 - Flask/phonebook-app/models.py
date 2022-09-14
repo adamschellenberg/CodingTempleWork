@@ -33,7 +33,7 @@ class User(db.Model, UserMixin):
         self.first_name = first_name
         self.last_name = last_name
         self.password = self.set_password(password)
-        self.email
+        self.email = email
         self.token = self.set_token(24)
         self.g_auth_verify = g_auth_verify
 
@@ -44,7 +44,7 @@ class User(db.Model, UserMixin):
         return str(uuid.uuid4())
 
     def set_password(self, password):
-        self.pw_hash - generate_password_hash(password)
+        self.pw_hash = generate_password_hash(password)
         return self.pw_hash
 
     def __repr__(self):
