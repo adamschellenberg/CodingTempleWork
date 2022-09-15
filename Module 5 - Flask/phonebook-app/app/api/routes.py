@@ -36,17 +36,13 @@ def get_contact(current_user_token):
     response = contacts_schema.dump(contacts)
     return jsonify(response)
 
-# OPTIONAL. Might not work
-# @api.route('/contacts/<id>', methods = ['GET'])
-# @token_required
-# def get_single_contact(current_user_token, id):
-#     fan = current_user_token.token
-#     if fan:
-#         contact = Contact.query.get(id)
-#         response = contact_schema.dumo(contact)
-#         return jsonify(response)
-#     else:
-#         return jsonify({'message': 'Valid token required'}), 401
+# Get single contact
+@api.route('/contacts/<id>', methods = ['GET'])
+@token_required
+def get_single_contact(current_user_token, id):
+    contact = Contact.query.get(id)
+    response = contact_schema.dump(contact)
+    return jsonify(response)
 
 # Update endpoint
 @api.route('/contacts/<id>', methods = ['POST', 'PUT'])
