@@ -1,21 +1,43 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './styles.css';
-import { Home } from './components';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { FirebaseAppProvider, AuthCheck} from 'reactfire';
+import './style.css';
+import { Home, Contact, About, Phonebook, SignIn } from './components';
+import { firebaseConfig } from './firebaseConfig';
+import 'firebase/auth';
+import { Provider } from 'react-redux';
+import { store } from './redux/store';
 
 let myTitle = "Adam's Phonebook"
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
+ReactDOM.render(
   <React.StrictMode>
-    <Home title={myTitle}/>
-  </React.StrictMode>
-);
+    <FirebaseAppProvider firebaseConfig={firebaseConfig} suspense={true}>
+    <Provider store={store}>
+      <Router >
+        <Switch>
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+          <Route exact path="/">
+            <Home title={myTitle}/>
+          </Route>
+          <Route exact path="/phonebook">
+            <Phonebook></Phonebook>
+          </Route>
+          <Route exact path="/contact">
+            <Contact></Contact>
+          </Route>
+          <Route exact path="/about">
+            <About></About>
+          </Route>
+          <Route exact path="/signin">
+            <SignIn></SignIn>
+          </Route>
+
+        </Switch>
+      </Router>
+    </Provider>
+    </FirebaseAppProvider>
+  </React.StrictMode>,
+  document.getElementById('root')
+);
