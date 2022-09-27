@@ -1,0 +1,76 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #4D4D4D;
+    color: white;
+}
+
+.jumbotron {
+    margin-top: 40px;
+}
+
+.background {
+    width: 100%;
+}
+
+.call-to-action {
+    text-align: center;
+}
+
+.events {
+    text-align: center;
+}
+
+.card {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 250px;
+}
+
+.card-img-top {
+    height: 250px;
+}
+
+.testimonials {
+    text-align: center;
+}
+
+.testimonial-quotes > .card {
+    text-align: justify;
+}
+
+
+footer {
+    padding: 25px;
+    color: black;
+    background-color: #FFFAF4;
+    height: fit-content;
+}
+
+.info {
+    float:left;
+    margin-left: 15px;
+}
+
+.contact-form {
+    float: right;
+    width: 50%;
+    margin-right: 15px;
+}
+
+.copyright {
+    clear: both;
+    padding-top: 50px;
+    text-align: center;
+}
+
+
+.login {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.register {
+    margin-bottom: 100px;
+}
