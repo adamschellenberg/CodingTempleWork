@@ -60,3 +60,19 @@ footer {
     margin-top: 100px;
     margin-bottom: 100px;
 }
+
+.large-quote {
+    margin-top: 100px;
+}
+
+.owners {
+    max-width: 350px;
+}
+
+.about {
+    margin-top: 100px;
+}
+
+.gym-img {
+    width: 100%;
+}
