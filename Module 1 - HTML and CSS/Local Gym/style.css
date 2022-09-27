@@ -25,7 +25,8 @@ body {
     margin: auto;
     margin-top: 20px;
     margin-bottom: 30px;
-    width: 250px;
+    max-width: 350px;
+    min-width: 280px;
 }
 
 .card-img-top {
@@ -48,17 +49,6 @@ footer {
     height: fit-content;
 }
 
-.info {
-    float:left;
-    margin-left: 15px;
-}
-
-.contact-form {
-    float: right;
-    width: 50%;
-    margin-right: 15px;
-}
-
 .copyright {
     clear: both;
     padding-top: 50px;
@@ -66,11 +56,7 @@ footer {
 }
 
 
-.login {
+.login-register {
     margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-.register {
     margin-bottom: 100px;
 }
